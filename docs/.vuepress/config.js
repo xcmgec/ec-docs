@@ -12,12 +12,41 @@ module.exports = {
       { text: 'ERP', link: '/erp/' },
     ],
     sidebar: {
-      '/crm/': [
-      	'',
-      	'user'
-      ]
+      '/crm/': getCrmSidebar()
     },
     sidebarDepth: 3,
+    // repo: 'xcmgec/ec-docs',
+    docsRepo: 'xcmgec/ec-docs',
+    docsDir: 'docs',
+    editLinks: true,
+    editLinkText: '帮我编辑此页',
+    lastUpdated: '最近更新',
+    smoothScroll: true,
   },
-  smoothScroll: true,
+}
+
+function getCrmSidebar() {
+	return [
+		{
+			title: "系统指南",
+			path: '/crm/',
+			collapsable: false,
+			children: [
+				'user',
+				'setting'
+			]
+		},
+		{
+			title: "业务操作",
+			path: '/crm/business/',
+			collapsable: false,
+			children: [
+				'customer',
+				'contract',
+				'production-order',
+				'payment',
+				'delivery-notes'
+			]
+		},
+	]
 }
