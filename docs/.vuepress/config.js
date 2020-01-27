@@ -38,15 +38,6 @@ function getCrmSidebar() {
 			]
 		},
 		{
-			title: "数据维护",
-			// path: '/crm/add/',
-			collapsable: false,
-			children: [
-				'add-user',
-				'add-product',
-			]
-		},
-		{
 			title: "业务操作",
 			path: '/crm/business/',
 			collapsable: false,
@@ -56,6 +47,15 @@ function getCrmSidebar() {
 				'production-order',
 				'payment',
 				'delivery-notes'
+			]
+		},
+		{
+			title: "数据维护",
+			// path: '/crm/add/',
+			collapsable: false,
+			children: [
+				'add-user',
+				'add-product',
 			]
 		},
 	]
