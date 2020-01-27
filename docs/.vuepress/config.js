@@ -12,7 +12,8 @@ module.exports = {
       { text: 'ERP', link: '/erp/' },
     ],
     sidebar: {
-      '/crm/': getCrmSidebar()
+      '/crm/': getCrmSidebar(),
+      '/erp/': getErpSidebar()
     },
     sidebarDepth: 3,
     // repo: 'xcmgec/ec-docs',
@@ -37,6 +38,15 @@ function getCrmSidebar() {
 			]
 		},
 		{
+			title: "数据维护",
+			// path: '/crm/add/',
+			collapsable: false,
+			children: [
+				'add-user',
+				'add-product',
+			]
+		},
+		{
 			title: "业务操作",
 			path: '/crm/business/',
 			collapsable: false,
@@ -50,3 +60,21 @@ function getCrmSidebar() {
 		},
 	]
 }
+
+function getErpSidebar() {
+	return [
+		{
+			title: "付款申请",
+			collapsable: false,
+			children: [
+			]
+		},
+		{
+			title: "费用报销",
+			collapsable: false,
+			children: [
+			]
+		},
+	]
+}
+
