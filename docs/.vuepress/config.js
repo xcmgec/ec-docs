@@ -42,11 +42,20 @@ function getCrmSidebar() {
 			path: '/crm/business/',
 			collapsable: false,
 			children: [
-				'customer',
-				'contract',
-				'production-order',
-				'payment',
-				'delivery-notes'
+				// 'customer',
+				// 'contract',
+				// 'production-order',
+				// 'payment',
+				// 'delivery-notes',
+				{
+					title: "客户管理",
+					// collapsable: false,
+					path: '/crm/customer/',
+					children: [
+						'customer1',
+						'customer2',
+					]
+				}
 			]
 		},
 		{
