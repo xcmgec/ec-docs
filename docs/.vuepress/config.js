@@ -42,7 +42,6 @@ function getCrmSidebar() {
 			path: '/crm/business/',
 			collapsable: false,
 			children: [
-				// 'customer',
 				// 'contract',
 				// 'production-order',
 				// 'payment',
@@ -55,7 +54,8 @@ function getCrmSidebar() {
 						'customer1',
 						'customer2',
 					]
-				}
+				},
+				'mobile',
 			]
 		},
 		{
