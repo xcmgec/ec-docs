@@ -1,10 +1,11 @@
 module.exports = {
   title: '文档中心',
-  // description: 'Talk is cheap, Show me the code.'
-  description: 'There should be one-- and preferably only one --obvious way to do it.',
+  // description: 'Talk is cheap, Show me the code.',
+  description: 'There should be one and preferably only one obvious way to do it.',
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }]
   ],
+  // theme: 'antdocs',
   themeConfig: {
   	logo: '/logo.png',
   	nav: [
